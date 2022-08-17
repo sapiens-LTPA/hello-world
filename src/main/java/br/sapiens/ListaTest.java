@@ -1,19 +1,23 @@
 package br.sapiens;
 
-import javafx.beans.property.SimpleStringProperty;
+import br.sapiens.modelo.Pessoa;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
+import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 public class ListaTest {
-
-
     @FXML
     private TableView table;
 
+    @FXML
+    private Button windson;
     @FXML
     public void initialize() {
         table.setEditable(true);
@@ -48,28 +52,12 @@ public class ListaTest {
             new Pessoa("Michael", "Brown", "michael.brown@example.com")
     );
 
-
-    public class Pessoa {
-        private final SimpleStringProperty nome;
-        private final SimpleStringProperty  sobreNome;
-        private final SimpleStringProperty  email;
-
-        private Pessoa(String nome, String sobreNome, String email) {
-            this.nome = new SimpleStringProperty(nome);
-            this.sobreNome = new SimpleStringProperty(sobreNome);
-            this.email = new SimpleStringProperty(email);
-        }
-
-        public String getNome() {
-            return nome.get();
-        }
-
-        public String getSobreNome() {
-            return sobreNome.get();
-        }
-
-        public String getEmail() {
-            return email.get();
+    public void acaoBotao(){
+        for (Pessoa pessoa : data){
+            System.out.println(pessoa);
         }
     }
+
+
+
 }

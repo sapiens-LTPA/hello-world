@@ -6,4 +6,6 @@ module com.example.demo {
 
     opens br.sapiens to javafx.fxml;
     exports br.sapiens;
+    exports br.sapiens.modelo;
+    opens br.sapiens.modelo to javafx.fxml;
 }

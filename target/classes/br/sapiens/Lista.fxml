@@ -8,6 +8,6 @@
    <children>
       <TableView fx:id="table" layoutX="8.0" layoutY="7.0" prefHeight="352.0" prefWidth="584.0">
       </TableView>
-      <Button fx:id="windson" layoutX="100.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#acaoBotao" text="Exibir valores" />
+      <Button layoutX="100.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#acaoBotao" text="Exibir valores" />
    </children>
 </Pane>

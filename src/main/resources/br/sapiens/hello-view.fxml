@@ -4,10 +4,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="138.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.sapiens.HelloController">
+<Pane  fx:id="windson" prefHeight="138.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.sapiens.HelloController">
    <children>
-
-          <Label fx:id="welcomeText" layoutX="84.0" layoutY="52.0" text="Label StartUp" textAlignment="CENTER" />
+       <Label fx:id="welcomeText" layoutX="84.0" layoutY="52.0" text="Label StartUp" textAlignment="CENTER" />
        <Button alignment="BOTTOM_LEFT" layoutX="178.0" layoutY="99.0" onAction="#onHelloButtonClick" text="Hello!" />
    </children>
 </Pane>
